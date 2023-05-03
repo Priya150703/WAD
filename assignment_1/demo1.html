@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<title>blood bank </title>
+<style>
+
+body{
+  font-family: 'Abel', sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  font-size: 1.2em;
+}
+
+.text-box {
+  border-radius: 20px;
+  margin: 2em auto;
+  padding: 20px;
+  width: 90%;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.8em;
+  color: #f94449;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+hr {
+  width: 70%;
+  margin: 10px auto;
+}
+
+.container {
+  
+  border-radius: 20px;
+  margin: auto;
+  width: 90%;
+  padding: 1em;
+  
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  margin-top: 20px;
+}
+
+.tab {
+  text-align: left;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.field {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  margin: 18px 0 0 10px;
+  border: 1px solid #e67e22;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+input {
+  margin: 7px;
+}
+
+#dropdown {
+  width: 100%;
+  padding: 5px;
+  margin: 20px 0 10px 10px;  
+  border: 1px solid #e67e22;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 15px;
+}
+.btn {
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  background-color: #f94449;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 1px solid;
+}
+  
+h1 {
+    font-size: 2em;
+  }
+  
+.labels {
+    width: 100%;
+    text-align: left;
+  }
+.tab {
+    width: 100%;
+    margin-left: -10px;
+  }
+.field {
+    width: 100%;
+  }
+select {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    margin: auto;
+  }
+.container{
+  margin: 10px 100px;
+  width: 650px;
+
+}
+ .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+<ul>
+  <li><a class="active" href="homePage.html">Home</a></li>
+  <li><div class="dropdown">
+    <button class="dropbtn">About us
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="home.html">Home</a>
+      <a href="g.html">Gallery</a>
+      <a href="c.html">Contact us</a>
+    </div>
+  </div></li>
+  <li><div class="dropdown">
+    <button class="dropbtn">Looking for blood
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="demo1.html">Patient Login</a>
+      <a href="demo.html">Blood availability</a>
+    </div>
+  </div> </li>
+  <li><div class="dropdown">
+    <button class="dropbtn">Want to donate blood
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="donor1.html">Donor Login</a>
+      <a href="infoblood.html">About Blood Bank</a>
+    </div>
+  </div></li>
+  <li><a href="add_blood_bank.html">Blood Bank Login</a></li>
+</ul>
+<div class="w3-card-4" style="width:60%;">
+<header class="container">
+<b><h3 style="margin: 10px 200px; color: #f94449;">Patient Login Form</b></h3>
+</header>
+<div>
+<hr>
+<div class="container">
+
+<form>
+<div class="labels">
+<b><label id="name-label" for="name"> Full Name : </label></b></div>
+<div class="tab">
+<input class="field" type="text" id="name"  placeholder="Enter your name"></div>
+
+<div class="labels">
+<b><label id="email-label" for="email"> Email : </label></b></div>
+<div class="tab">
+<input class="field" type="email" id="email" placeholder="email@email.com"></div>
+        
+<div class="labels">
+<b><label id="number-label" for="number"> Age : </label></b></div>
+<div class="tab">
+<input class="field" id="number"></div>
+
+
+<div class="labels">
+<b><label for="dropdown">Blood group : </label></b></div>
+<div class="tab">
+
+<select id="dropdown">
+<option >Select an option</option>
+<option>A-Ve</option>
+<option>A+Ve</option>
+<option>O-Ve</option>
+<option>O+Ve</option>
+<option>AB-Ve</option>
+<option>AB+Ve</option>
+</select>
+</div>
+        
+<div class="labels">
+<b><label>Gender : </label></b></div><br><br>
+<div class="tab">
+<input type="radio">Male<br>
+<input type="radio">Female<br>
+</div>
+        
+<div class="labels">
+<b><label for="dropdown">Language : </label></b></div>
+<div class="tab">
+<select id="dropdown">
+<option >Select an option</option>
+<option value="<=5">English</option>
+<option value="<=10">Marathi</option>
+<option value="<=15">Hindi</option>s
+</select>
+</div>
+        
+ <div class="labels">
+ <b><label>Diseases : </label></b></div><br><br>
+<div class="tab">
+<input type="checkbox">Hearing problem<br>
+<input type="checkbox">blood pressure<br>
+<input type="checkbox">Visual problems<br>
+<input type="checkbox"><br>
+<input type="checkbox"><br>
+</div>        
+        
+<div class="labels">
+<b><label for="comments">Description : </label></b></div>
+<div class="tab">
+<textarea class="field" id="comments" placeholder="comments"></textarea></div>
+<br><br>
+<div class="btn">
+<button id="submit" type="submit">Submit</button>
+</div>
+</form>
+</div>
+</body>     
+</html>

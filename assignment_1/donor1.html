@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>donor</title>
+<style>
+input[type=text], select {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 4px;
+  margin-left: 30px;
+  margin-right: 100px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+input[type=submit] {
+  width: 60%;
+  background-color:  #f94449;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+
+}
+
+input[type=submit]:hover {
+  background-color:#f94449 ;
+}
+
+div {
+
+ 
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 8px 0;
+}
+input[type="radio"]{
+  margin: 0 10px 0 10px;
+}
+input[type="date"]
+{
+  width: 20%;
+  padding: 12px 20px;
+  margin: 4px;
+  margin-left: 30px;
+  margin-right: 100px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="tel"]
+{
+  width: 20%;
+  padding: 12px 20px;
+  margin: 4px;
+  margin-left: 30px;
+  margin-right: 100px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+ 
+</style>
+</head>
+<body>
+<center><h2 style="color: #f94449; font-size: 30px;">Donor Form</h2></center>
+<hr>
+
+<div style="margin-left: 20%; width: 50%;">
+  <form >
+   <b> <label for="fname" style="font-size: 18px;">First Name:</label></b>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
+
+    <b><label for="lname" style="font-size: 18px;">Last Name:</label></b>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br>
+
+
+ <b> <label for="blood_group" style="font-size: 18px;">What is your blood group?</label>
+  <br><br></b>
+   <input type="radio" id="html" name="blood_group" value="O+">
+<label for="html" style="font-size: 15px;">O+</label>
+ <input type="radio" id="html" name="blood_group" value="O-">
+<label for="html" style="font-size: 15px;">O-</label><br>
+
+<input type="radio" id="css" name="blood_group" value="A+">
+<label for="css" style="font-size: 15px;">A+</label>
+<input type="radio" id="css" name="blood_group" value="A-">
+<label for="css" style="font-size: 15px;">A-</label>
+<br>
+
+<input type="radio" id="javascript" name="blood_group" value="B+">
+<label for="javascript" style="font-size: 15px;">B+ </label> 
+<input type="radio" id="javascript" name="blood_group" value="B-">
+<label for="javascript" style="font-size: 15px;">B- </label>
+ <br>
+<input type="radio" id="javascript" name="blood_group" value="AB+">
+<label for="javascript" style="font-size: 15px;">AB+</label> 
+<input type="radio" id="javascript" name="blood_group" value="AB-">
+<label for="javascript" style="font-size: 15px;">AB-</label> 
+<br>
+<br>
+  <b><label for="birthday" style="font-size: 18px;">Date of birth:</label>
+  <input type="date" id="birthdate" name="birthdate">
+  <br><br></b>
+
+  <b> <label for="gender" style="font-size: 18px;">Gender:</label>
+  <br><br> </b>
+
+  <input type="radio" id="gd" name="gender" value="Male">
+<label for="html" style="font-size: 15px;">Male</label>
+ <input type="radio" id="gd" name="gender" value="Female">
+<label for="html" style="font-size: 15px;">Female</label><br><br>
+  
+  <b><label for="phn" style="font-size: 18px;">Phone Number:</label></b>
+    <input type="tel" id="phn" name="phone" placeholder="Enter Number" ><br><br>
+
+
+   <b> <label for="address" style="font-size: 18px;">Address Details:</label><br><br></b>
+     <label for="l1" style="font-size: 18px;">Line 1:</label>
+    <input type="text" id="add" name="address" placeholder="Address Line 1"><br><br>
+    <label for="l2" style="font-size: 18px;">Line 2:</label>
+    <input type="text" id="add" name="address" placeholder="Address Line 2"><br><br>
+
+    <label for="city" style="font-size: 18px;">City:</label>
+    <input type="text" id="city" name="City" placeholder="City"><br><br>
+
+    <label for="state"style="font-size: 18px;">State:</label>
+    <input type="text" id="state" name="State" placeholder="State">
+    
+<br></br>
+    <center><input type="submit" value="Submit"></center>
+  </form>
+</div>
+
+</body>
+</html>
+
+

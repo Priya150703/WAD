@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+</head>
+<body>
+<form action="/action_page.php">
+  <div class="row">
+    <h3>Donor Type</h3>
+    <div class="col">
+      <input type="checkbox" id="voluntary" name="voluntary" value="voluntary">
+      <label for="voluntary">Voluntary</label><br>
+      <input type="checkbox" id="replacement" name="replacement" value="replacement">
+      <label for="replacement">Replacement</label><br>
+      <input type="checkbox" id="direct" name="directed" value="directed">
+      <label for="directed">Directed</label><br>
+      <input type="checkbox" id="auto" name="auto" value="auto">
+      <label for="auto">Autologous</label><br>
+      <input type="checkbox" id="family" name="family" value="family">
+      <label for="family">Family</label><br>
+      <input type="checkbox" id="repex" name="repex" value="repex">
+      <label for="repex">Replacement External</label>
+     </div>
+  </div><hr>
+  <div class="row">
+    <h3>Donation Type</h3>
+    <div class="col">
+      <input type="checkbox" id="leu" name="leu" value="leu">
+      <label for="leu">Leucaperesis</label><br>
+      <input type="checkbox" id="plasma" name="plasma" value="plasma">
+      <label for="plasma">Plasmapheresis</label><br>
+      <input type="checkbox" id="platelet" name="platelet" value="platelet">
+      <label for="platelet">Plateletpheresis</label><br>
+      <input type="checkbox" id="whole" name="whole" value="whole">
+      <label for="whole">Whole Blood</label>
+    </div>
+  </div><hr>
+  <div class="row">
+    <h3>Component Type</h3>
+    <div class="col">
+      <input type="checkbox" id="cryo" name="cryo" value="cryo">
+      <label for="cryo">Cryo Poor Plasma</label><br>
+      <input type="checkbox" id="cryop" name="cryop" value="cryop">
+      <label for="cryop">Cryoprecipitate</label><br>
+      <input type="checkbox" id="fresh" name="fresh" value="fresh">
+      <label for="fresh">Fresh Frozen Plasma</label><br>
+      <input type="checkbox" id="irr" name="irr" value="irr">
+      <label for="irr">Irradiated RBC</label><br>
+      <input type="checkbox" id="leuk" name="leuk" value="leuk">
+      <label for="leuk">Leukoreduced RBC</label><br>
+      <input type="checkbox" id="plas" name="plas" value="plas">
+      <label for="plas">Plasma</label><br>
+      <input type="checkbox" id="plac" name="plac" value="plac">
+      <label for="plac">Platelet Concentrate</label><br>
+      <input type="checkbox" id="plap" name="plap" value="plap">
+      <label for="plap">Platelet Poor Plasma</label><br>
+      <input type="checkbox" id="plar" name="plar" value="plar">
+      <label for="plar">Platelet Rich Plasma</label><br>
+      <input type="checkbox" id="sagm" name="sagm" value="sagm">
+      <label for="sagm">Sagm Packed Red Blood Cells</label><br>
+      <input type="checkbox" id="singled" name="singled" value="singled">
+      <label for="singled">Single Donor Plasma</label><br>
+      <input type="checkbox" id="singlep" name="singlep" value="singlep">
+      <label for="singlep">Single Donor Platelet</label><br>
+      <input type="checkbox" id="wholeb" name="wholeb" value="wholeb">
+      <label for="wholeb">Whole Blood</label><br>
+     </div>
+  </div><hr>
+  <div class="row">
+    <h3>TTI Types</h3>
+    <div class="col">
+      <input type="checkbox" id="hiv" name="hiv" value="hiv">
+      <label for="hiv">HIV 1&2</label>
+      <input type="checkbox" id="hepab" name="hepab" value="hepab">
+      <label for="hepab">Hepatitis-B</label>
+      <input type="checkbox" id="hepac" name="hepac" value="hepac">
+      <label for="hepac">Hepatitis-C</label>
+      <input type="checkbox" id="syp" name="syp" value="syp">
+      <label for="syp">Syphilis</label>
+      <input type="checkbox" id="malaria" name="malaria" value="malaria">
+      <label for="malaria">Malaria</label>
+    </div>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>
